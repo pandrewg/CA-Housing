@@ -1,18 +1,18 @@
-Real Estate Economic Analysis: Milestone Report
+# Real Estate Economic Analysis: Milestone Report
 
-Intro 
+## Intro 
 
 Real estate markets continuously evolve in response to the economic climate. To make sound investment decisions in these markets, we must be aware of the major forces at work. Whether we take the point of view of a first-time homebuyer or a professional investor, we need intelligent analysis of the different market components. Given the current state of the market and projected future developments, there will be certain real estate properties which are more desirable than others; our goal is to identify these properties. The definition of ‘desirability’ changes with our investment goals and the point of view we take, but one thing is universal--the need for guidance through analysis. 
 
 For this project, we will build an application in Python to automate different aspects of economic analysis which go into real estate investing. In particular, the project will focus on the Los Angeles county region and have three major components of analysis: growth, value, and liquidity. For our study of growth, we will analyze a tax dataset which contains income bracket counts by zip code throughout California. For our study of value, we will analyze a dataset which contains characteristic information for millions of LA county properties and their assessed values. For our study of liquidity, we will analyze a dataset containing quantity of sales information.  
 
-II. 	Data & Preliminary Analysis
+## II. 	Data & Preliminary Analysis
 
 Zip codes will be used as the primary keys in this project, and will be used to relate data from separate datasets. This design choice was made to ensure that we had location-specific data (which is fundamental in real estate analysis) yet also sufficient data points to model with. For a few datasets, information will not be available at the level of specificity of zip code, and data representing a more general region will be used in place. These will be noted.
 
 * Properties of these datasets are explained in detail on their corresponding EDA Jupyter Notebooks.
 
-Growth 
+### Growth 
 1. California tax returns by zip code: 2004 – 2014 (.xlsx)
 
 For the component of this project which studies growth, we will use a dataset containing counts of IRS tax returns by filers’ income brackets. By studying statistically significant changes in proportions over these brackets, we can identify areas with high potential for growth in demand. 
@@ -25,7 +25,7 @@ The different brackets are identified by zip codes from California (i.e. for a g
 
 Another important caveat: the dataset contains information from 2004 to 2014. At the time that this project is being put together, there is no publicly available data for more recent years. Thus, our analysis of this dataset will guide us, but it is imperative that we also study more recent (2016; 2017) trends together with this analysis to gain a better understanding of the market. Analysis of this tax dataset is to gain a better “big-picture” perspective of the market. 
 
-Pricing & Valuation
+### Pricing & Valuation
 1. Properties LA County: 2015 (.xlsx)
 
 	For the component of this project which studies value, we will use property information and the ‘comparable real estate’ approach for analysis. That is, we will create models out of data points (properties) with characteristics similar to the input, and use historical valuations to predict value. This dataset contains zip codes, which will be used to combine with the other components of analysis. The columns in this dataset separate into two main subsets: categorical information and feature information. (Details on the columns can be found in the EDA Notebook.)
@@ -50,14 +50,14 @@ This contains median sale prices of real estate properties in various California
 5. Data Dictionary (Properties in LA County) (.xlsx)
 This contains value mappings for categorical features in the properties dataset. (The properties dataset uses integers to represent categories: 2 = Central Heating, 261 = Single Residential Home, etc.)
 
-Liquidity (TBA)
+### Liquidity (TBA)
 3. LA County Sales: 2017
 
 By studying sales and measuring levels against averages, we can come to a conclusion about the liquidity of the property in question. ...
 
 
 
-III. 	LOOKING AHEAD
+## III. 	LOOKING AHEAD
 
 With the current draft of this project, a major limitation is the interjection of human-made decisions in both designing the entire system as well as optimizing the learning algorithms, i.e. the current method uses heuristics which reduce the reliability of the system. As we look forward to improving the application, the first priority seems to be to automate and optimize these decisions. (We want this project to be reminiscent of a product that could be used in industry, i.e. minimize the need for human intervention in any part of the system.)
 
