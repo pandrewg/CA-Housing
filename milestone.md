@@ -53,7 +53,7 @@ This contains value mappings for categorical features in the properties dataset.
 Liquidity (TBA)
 3. LA County Sales: 2017
 
-By studying sales and measuring levels against averages, we can come to a conclusion about the liquidity of the property in question. ...
+By studying sales and measuring levels against averages, we can come to a conclusion about the liquidity of the property in question. (TO BE CONTINUED)
 
 
 
