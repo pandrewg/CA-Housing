@@ -13,7 +13,7 @@ Zip codes will be used as the primary keys in this project, and will be used to 
 * Properties of these datasets are explained in detail on their corresponding EDA Jupyter Notebooks.
 
 ### Growth 
-1. California tax returns by zip code: 2004 – 2014 (.xlsx)
+#### 1. California tax returns by zip code: 2004 – 2014 (.xlsx)
 
 For the component of this project which studies growth, we will use a dataset containing counts of IRS tax returns by filers’ income brackets. By studying statistically significant changes in proportions over these brackets, we can identify areas with high potential for growth in demand. 
 
@@ -26,7 +26,7 @@ The different brackets are identified by zip codes from California (i.e. for a g
 Another important caveat: the dataset contains information from 2004 to 2014. At the time that this project is being put together, there is no publicly available data for more recent years. Thus, our analysis of this dataset will guide us, but it is imperative that we also study more recent (2016; 2017) trends together with this analysis to gain a better understanding of the market. Analysis of this tax dataset is to gain a better “big-picture” perspective of the market. 
 
 ### Pricing & Valuation
-1. Properties LA County: 2015 (.xlsx)
+#### 1. Properties LA County: 2015 (.xlsx)
 
 	For the component of this project which studies value, we will use property information and the ‘comparable real estate’ approach for analysis. That is, we will create models out of data points (properties) with characteristics similar to the input, and use historical valuations to predict value. This dataset contains zip codes, which will be used to combine with the other components of analysis. The columns in this dataset separate into two main subsets: categorical information and feature information. (Details on the columns can be found in the EDA Notebook.)
 	
@@ -38,20 +38,20 @@ Categorical information will be used to filter the main dataset into a training 
 
 Feature information will be used in regression (i.e. the actual prediction) after categorical ‘pre-processing’ phase. In the current iteration of the project, this is done by choosing a threshold minimal absolute value for the correlation between a feature and the assessed value we are trying to predict. This is a valid approach--we consequently model the property with features which have a statistically significant relationship. However, the threshold value is again rather arbitrarily chosen. In a feature update, an automated process will remove the features iteratively such that we end with the features that minimize test error. 
 
-2. RegionID to Zip Code Dictionary (.xlsx) (mini data set, will be described in more detail in full report)
+#### 2. RegionID to Zip Code Dictionary (.xlsx) (mini data set, will be described in more detail in full report)
 This dataset is used to pre-process the properties dataset. In particular, the properties dataset contains identifiers used by Zillow which are not directly meaningful. We must map these region identifiers to their corresponding zip codes using this dictionary. 
 
-3. ZHVI Growth (.xlsx) (mini data set, will be described in more detail in full report)
+#### 3. ZHVI Growth (.xlsx) (mini data set, will be described in more detail in full report)
 This contains growth measurements for zip codes in LA county from 2015 to 2017, based on Zillow’s ZHVI metric. These quantities are used in the final calculation for suggesting a sale price for today.
 
-4. Sales Medians LA County (.xlsx) (mini data set, will be described in more detail in full report)
+#### 4. Sales Medians LA County (.xlsx) (mini data set, will be described in more detail in full report)
 This contains median sale prices of real estate properties in various California regions. This is used in our models to calculate suggested sale prices.
 
-5. Data Dictionary (Properties in LA County) (.xlsx)
+#### 5. Data Dictionary (Properties in LA County) (.xlsx)
 This contains value mappings for categorical features in the properties dataset. (The properties dataset uses integers to represent categories: 2 = Central Heating, 261 = Single Residential Home, etc.)
 
 ### Liquidity (TBA)
-3. LA County Sales: 2017
+#### 1. LA County Sales: 2017
 
 By studying sales and measuring levels against averages, we can come to a conclusion about the liquidity of the property in question. ...
 
