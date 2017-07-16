@@ -53,13 +53,13 @@ This contains value mappings for categorical features in the properties dataset.
 Liquidity (TBA)
 3. LA County Sales: 2017
 
-By studying sales and measuring levels against averages, we can come to a conclusion about the liquidity of the property in question. (TO BE CONTINUED)
+By studying sales and measuring levels against averages, we can come to a conclusion about the liquidity of the property in question. ...
 
 
 
 III. 	LOOKING AHEAD
 
-	With the current draft of this project, a major limitation is the interjection of human-made decisions in both designing the entire system as well as optimizing the learning algorithms, i.e. the current method uses heuristics which reduce the reliability of the system. As we look forward to improving the application, the first priority seems to be to automate and optimize these decisions. (We want this project to be reminiscent of a product that could be used in industry, i.e. minimize the need for human intervention in any part of the system.)
+With the current draft of this project, a major limitation is the interjection of human-made decisions in both designing the entire system as well as optimizing the learning algorithms, i.e. the current method uses heuristics which reduce the reliability of the system. As we look forward to improving the application, the first priority seems to be to automate and optimize these decisions. (We want this project to be reminiscent of a product that could be used in industry, i.e. minimize the need for human intervention in any part of the system.)
 
 Additionally, the question still remains of how exactly we will combine the analysis from the growth, value, and liquidity components into an overarching conclusion about the input property (as well as define what exactly the “output” is). This can be done in a variety of ways, and the specific approach  chosen will depend on the client using the application.
 
