@@ -1,3 +1,5 @@
+# Statistical Inference: EDA Tax
+
 For our analysis of the relationship between income levels and growth in the housing market, we will study two datasets using statistical inference. The first dataset, containing tax return information, will require some pre-processing before we can begin the analysis. The second dataset, containing housing value growth data, will be used to assess the observed growth in a set of regions.
 
 First, we study the distributions of changes in the proportions of each income bracket from 2007 to 2014. There is a distribution for each bracket—i.e. five for the dataset.  We are interested in regions which have significantly negative changes in the lower brackets and significantly positive changes in the higher brackets (that is, the proportion of earners has shifted from 2007 to 2014 towards the higher levels beyond what is ‘statistically typical’). We measure significance as a number of standard deviations from the mean. 
@@ -9,3 +11,5 @@ Thus, we next take the regions within a cluster and develop distributions using 
 Furthermore, for each cluster we will measure growth over three timelines and create three separate distributions to test the correlations on a year-to-year basis as well as a tool for forecasting. In particular, we test the growth from December 2007 to December 2014, December 2014 to December 2015, and December 2014 to May 2017. The first timeline represents the timeline of the tax dataset (i.e. “year-to-year” correlation), the second timeline represents a 1 year forecast correlation, and the last timeline approximately represents a 2.5 year forecast. 
 
 What is observed is that regions with significant growth patterns favoring the higher brackets have a strong correlation on a year-to-year basis, but the correlation becomes less reliable as we attempt to forecast further into the future. The relationship seems reliable for a 1 year forecast, but would not be recommended beyond that. We are limited by the available data (the tax datasets only go up to 2014), but the study shows that given sufficient information about income levels, we can make sound predictions about housing value growth for the short term future. 
+
+For more details, refer to the EDA tax notebook.
