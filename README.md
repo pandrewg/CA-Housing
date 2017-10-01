@@ -1,5 +1,3 @@
-### CA real estate market analysis
-
 DOC - documentation
 
 EDA - exploratory data analysis
