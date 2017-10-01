@@ -1,3 +1,6 @@
+
+Code and Jupyter Notebook in 'Project' directory
+
 DOC - documentation
 
 EDA - exploratory data analysis
